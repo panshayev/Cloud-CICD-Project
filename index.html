@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Рамазан Паншаев — портфолио IT-специалиста</title>
+  <meta name="description" content="Портфолио студента группы ТИС-23Р: навыки, проекты и контакты.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="hero-group">Группа ТИС-23Р</p>
+    <h1>Рамазан Паншаев</h1>
+    <p class="hero-text">Начинающий IT-специалист. Учусь создавать веб-приложения и автоматизировать их публикацию через CI/CD.</p>
+    <nav aria-label="Разделы сайта">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>Обо мне</h2>
+      <p>Я студент и изучаю информационные системы. Мне интересно, как код попадает от разработчика к пользователю: от первой строки в редакторе до работающего сайта в интернете.</p>
+      <p>Эта страница опубликована автоматически: каждое изменение в ветке <code>main</code> запускает GitHub Actions и обновляет сайт без ручной загрузки.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Навыки</h2>
+      <p class="hint">Нажмите на навык, чтобы увидеть уровень.</p>
+      <ul class="skills" id="skills-list">
+        <li><button class="skill" data-level="Уверенно">HTML</button></li>
+        <li><button class="skill" data-level="Уверенно">CSS</button></li>
+        <li><button class="skill" data-level="Базовый">JavaScript</button></li>
+        <li><button class="skill" data-level="Базовый">Git и GitHub</button></li>
+        <li><button class="skill" data-level="Изучаю">GitHub Actions</button></li>
+        <li><button class="skill" data-level="Изучаю">YAML</button></li>
+      </ul>
+      <p class="skill-info" id="skill-info" aria-live="polite">Навык не выбран.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Проекты</h2>
+      <div class="filters" role="group" aria-label="Фильтр проектов">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="web">Веб</button>
+        <button class="filter" data-filter="devops">Автоматизация</button>
+      </div>
+      <div class="projects" id="projects-list">
+        <article class="project" data-type="web">
+          <h3>Сайт-портфолио</h3>
+          <p>Адаптивная страница на HTML, CSS и JavaScript с фильтром проектов.</p>
+        </article>
+        <article class="project" data-type="devops">
+          <h3>Cloud-CICD-Project</h3>
+          <p>Автоматическая проверка и публикация сайта через GitHub Actions и GitHub Pages.</p>
+        </article>
+        <article class="project" data-type="web">
+          <h3>Электронная библиотека</h3>
+          <p>Учебная идея: каталог книг с поиском по названию.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Почта: <a href="mailto:example@mail.com">example@mail.com</a></p>
+      <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/ваш-логин</a></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Рамазан Паншаев</footer>
+  <script src="script.js"></script>
+</body>
+</html>
